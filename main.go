@@ -17,7 +17,7 @@ import (
 
 func init() {
 
-	if _, err := os.stat(".env"); err == nil {
+	if _, err := os.Stat(".env"); err == nil {
 		err := godotenv.Load()
 		if err != nil {
 			fmt.Println("Gagal Memuat File .env")
@@ -64,7 +64,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "5000"
+		port = "8088"
 	}
 
 	fmt.Println(app.Listen(":" + port))
