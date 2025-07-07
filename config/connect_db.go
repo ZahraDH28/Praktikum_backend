@@ -9,9 +9,9 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var DBName = "WB"
-var UserCollection = "users"
-var MahasiswaCollection = "db2k25"
+var DBName = "db2025"
+var UserCollection = "user"
+var MahasiswaCollection = "data_mahasiswa"
 var MongoString string = os.Getenv("MONGOSTRING")
 
 func MongoConnect(dbname string) (db *mongo.Database) {
