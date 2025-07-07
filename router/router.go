@@ -30,7 +30,7 @@ func SetupRoutes(app *fiber.App) {
 	// Dokumentasi swagger
 	app.Get("/docs/*", swagger.HandlerDefault)
 
-	app.Post("/register", handler.Register)
-	app.Post("/login", handler.Login)
+	api.Post("/register", handler.Register)
+	api.Post("/login", handler.Login)
 
 }
